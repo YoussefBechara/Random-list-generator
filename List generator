@@ -1,0 +1,11 @@
+import random
+def list_generator(length, range_of_randomness):
+    list = []
+    while len(list) < length:
+        iteration = random.randint(1, range_of_randomness)
+        if iteration not in list:
+            list.append(iteration)
+    print(list)
+
+
+list_generator(10, 50)
